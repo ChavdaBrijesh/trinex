@@ -1,0 +1,75 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
+export default function HomePage() {
+  return (
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-blue-600 text-white py-20 text-center">
+        <h1 className="text-5xl font-bold mb-4">Trinex</h1>
+        <p className="text-xl mb-6">We build mobile apps & websites with cutting-edge technologies</p>
+        <Button className="bg-white text-blue-600 font-semibold hover:bg-gray-100">Get in Touch</Button>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">About Us</h2>
+        <p className="text-lg text-gray-600">
+          Trinex is a passionate IT company specializing in high-quality mobile applications and responsive websites. Our mission is to turn your ideas into impactful digital experiences.
+        </p>
+      </section>
+
+      {/* Services Section */}
+      <section className="bg-gray-100 py-16 px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Mobile App Development</h3>
+              <p>
+                From UI/UX design to deployment, we create powerful Android & iOS apps tailored to your business needs.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Website Development</h3>
+              <p>
+                We craft responsive and performance-optimized websites ranging from landing pages to complex web platforms.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10">Our Work</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white rounded-xl shadow p-4">MODV App</div>
+          <div className="bg-white rounded-xl shadow p-4">MyBizCard Scanner</div>
+          <div className="bg-white rounded-xl shadow p-4">E-Commerce Website</div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-blue-50 py-16 px-6">
+        <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
+        <form className="max-w-xl mx-auto space-y-4">
+          <Input placeholder="Your Name" />
+          <Input placeholder="Email Address" type="email" />
+          <Textarea placeholder="Your Message" rows={4} />
+          <Button type="submit">Send Message</Button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-600 text-white py-6 text-center">
+        <p>&copy; 2025 Trinex. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
