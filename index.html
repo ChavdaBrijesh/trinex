@@ -5,19 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trinex - IT Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6985c0;
+      --secondary: #dda664;
+      --highlight: #eb8e0c;
+    }
+    .bg-primary { background-color: var(--primary); }
+    .text-primary { color: var(--primary); }
+    .bg-highlight { background-color: var(--highlight); }
+    .text-highlight { color: var(--highlight); }
+    .hover\:bg-secondary:hover { background-color: var(--secondary); }
+  </style>
 </head>
 <body class="font-sans text-gray-800">
 
   <!-- Hero Section -->
-  <section class="bg-blue-600 text-white py-20 text-center">
-    <h1 class="text-5xl font-bold mb-4">Trinex</h1>
+  <section class="bg-primary text-white py-20 text-center">
+    <img src="trinex-logo-converted.png" alt="Trinex Logo" class="mx-auto mb-6 w-40" />
     <p class="text-xl mb-6">We build mobile apps & websites with cutting-edge technologies</p>
-    <button class="bg-white text-blue-600 font-semibold px-6 py-2 rounded hover:bg-gray-100">Get in Touch</button>
+    <button class="bg-white text-primary font-semibold px-6 py-2 rounded hover:bg-secondary">Get in Touch</button>
   </section>
 
   <!-- About Section -->
   <section class="py-16 px-6 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    <h2 class="text-3xl font-bold text-highlight mb-4">About Us</h2>
     <p class="text-lg text-gray-600">
       Trinex is a passionate IT company specializing in high-quality mobile applications and responsive websites. Our mission is to turn your ideas into impactful digital experiences.
     </p>
@@ -25,14 +37,14 @@
 
   <!-- Services Section -->
   <section class="bg-gray-100 py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+    <h2 class="text-3xl font-bold text-center text-highlight mb-10">Our Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
       <div class="bg-white rounded-xl shadow p-6">
-        <h3 class="text-xl font-semibold mb-2">Mobile App Development</h3>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Mobile App Development</h3>
         <p>From UI/UX design to deployment, we create powerful Android & iOS apps tailored to your business needs.</p>
       </div>
       <div class="bg-white rounded-xl shadow p-6">
-        <h3 class="text-xl font-semibold mb-2">Website Development</h3>
+        <h3 class="text-xl font-semibold mb-2 text-primary">Website Development</h3>
         <p>We craft responsive and performance-optimized websites ranging from landing pages to complex web platforms.</p>
       </div>
     </div>
@@ -40,7 +52,7 @@
 
   <!-- Portfolio Section -->
   <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Work</h2>
+    <h2 class="text-3xl font-bold text-center text-highlight mb-10">Our Work</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded-xl shadow p-4">MODV App</div>
       <div class="bg-white rounded-xl shadow p-4">MyBizCard Scanner</div>
@@ -49,18 +61,18 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="bg-blue-50 py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+  <section class="bg-[#f4f6fb] py-16 px-6">
+    <h2 class="text-3xl font-bold text-center text-highlight mb-6">Contact Us</h2>
     <form class="max-w-xl mx-auto space-y-4">
       <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded" />
       <input type="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded" />
       <textarea rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded"></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+      <button type="submit" class="bg-highlight text-white px-6 py-2 rounded hover:bg-secondary">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-6 text-center">
+  <footer class="bg-primary text-white py-6 text-center">
     <p>&copy; 2025 Trinex. All rights reserved.</p>
   </footer>
 
